@@ -24,13 +24,13 @@ var counter=0;
 				}	
 				
 			}
-			counter++;
 			console.log(counter);
 			if((((allside[0].innerHTML)==(allside[1].innerHTML))&&((allside[1].innerHTML)==(allside[2].innerHTML)))||(((allside[6].innerHTML)==(allside[7].innerHTML))&&((allside[7].innerHTML)==(allside[8].innerHTML)))||(((allside[3].innerHTML)==(allside[4].innerHTML))&&((allside[4].innerHTML)==(allside[5].innerHTML)))){
 				document.getElementById("title").innerText=("ВИ виграли!!!!!!!");
 			}
+			counter++;
 			if (counter==3){
-				document.getElementById("title").innerText=("Не бажаєте спробувати ще раз");
+				document.getElementById("UserName").innerText=(userName+" Не бажаєте спробувати ще раз?");
 			}
 			if	(counter==4){location.reload()}		
 		})
